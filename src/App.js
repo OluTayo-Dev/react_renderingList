@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Axios from './component/Axios';
+import List from "./component/List";
+import Lists from "./component/Lists";
+import './component/style.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <List />
+      <Lists />
+      <Axios />
+    
+      
     </div>
+    
   );
 }
 
